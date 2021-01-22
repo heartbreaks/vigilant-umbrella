@@ -27,7 +27,7 @@ function PersonalCard(props) {
   return (
     <Card
       style={{ width: "18rem", marginBottom: 5 }}
-      className="card-of-employer"
+      className={employee.selected ? 'selected-card' : "card-of-employer"}
       onClick={() => {
         props.editEmployeeCard(employee);
       }}

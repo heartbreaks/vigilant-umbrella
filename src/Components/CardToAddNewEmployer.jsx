@@ -7,7 +7,8 @@ class CardToAddNewEmployer extends React.Component {
   constructor(props) {
     super(props);
     const { selectedEmployee } = props;
-    this.state = { ...selectedEmployee };
+    this.state = { ...selectedEmployee, validated: false };
+
     this.onChangeHandler = this.onChangeHandler.bind(this);
     this.onSubmitHandler = this.onSubmitHandler.bind(this)
   }
@@ -39,7 +40,7 @@ class CardToAddNewEmployer extends React.Component {
   render() {
     return (
       <div className="form-for-employers">
-        <Form onSubmit={this.onSubmitHandler}>
+        <Form validated={this.state.validated} onSubmit={this.onSubmitHandler}>
           <Form.Group onChange={this.onChangeHandler}>
             <Form.Label>ФИО</Form.Label>
             <Form.Control
@@ -73,6 +74,7 @@ class CardToAddNewEmployer extends React.Component {
           <Form.Group onChange={this.onChangeHandler}>
             <Form.Label>Должность</Form.Label>
             <Form.Control
+              required
               as="select"
               name={"position"}
               custom

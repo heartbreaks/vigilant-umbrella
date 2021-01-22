@@ -22,6 +22,14 @@
   cursor: pointer;
   transition: 0.3s;
 }
+.selected-card{
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: gold;
+}
+.selected-card:hover{
+  background-color: rgb(236, 201, 0);
+}
 .card-of-employer:hover{
   background-color: gold;
 }
