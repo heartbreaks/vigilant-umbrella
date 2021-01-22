@@ -1,9 +1,13 @@
 import React from "react";
 import { Card, ListGroupItem, ListGroup, Badge } from "react-bootstrap";
 import { connect } from "react-redux";
-import { editEmployeeCard } from "../redux/actions";
+import { selectEmployee } from "../redux/actions";
 function PersonalCard(props) {
   const { employee } = props;
+
+  React.useEffect(() => {
+    props.setDisable(!props.employees.some(elem => elem.selected))
+  })
 
   function getStyledTypes(type) {
     switch (type) {
@@ -29,7 +33,7 @@ function PersonalCard(props) {
       style={{ width: "18rem", marginBottom: 5 }}
       className={employee.selected ? 'selected-card' : "card-of-employer"}
       onClick={() => {
-        props.editEmployeeCard(employee);
+        props.selectEmployee(employee);
       }}
     >
       <Card.Body>
@@ -49,8 +53,9 @@ function PersonalCard(props) {
 
 function mapStateToProps(state, ownProps) {
   const employee = state.employees.find(elem => elem.id == ownProps.id);
+  const {employees} = state
 
-  return { employee, state };
+  return { employee, state, employees };
 }
 
-export default connect(mapStateToProps, { editEmployeeCard })(PersonalCard);
+export default connect(mapStateToProps, { selectEmployee })(PersonalCard);

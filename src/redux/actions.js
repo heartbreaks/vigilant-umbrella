@@ -5,7 +5,7 @@ import {
   DELETE_EMPLOYEES,
 } from "./types";
 
-export const editEmployeeCard = payload => {
+export const selectEmployee = payload => {
   return {
     type: SELECT_EMPLOYEE,
     payload,
