@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/vigilant-umbrella/static/css/main.c617d053.chunk.css",
+    "main.js": "/vigilant-umbrella/static/js/main.9020d449.chunk.js",
+    "main.js.map": "/vigilant-umbrella/static/js/main.9020d449.chunk.js.map",
+    "runtime-main.js": "/vigilant-umbrella/static/js/runtime-main.f1cc87e3.js",
+    "runtime-main.js.map": "/vigilant-umbrella/static/js/runtime-main.f1cc87e3.js.map",
+    "static/js/2.96e6fbf0.chunk.js": "/vigilant-umbrella/static/js/2.96e6fbf0.chunk.js",
+    "static/js/2.96e6fbf0.chunk.js.map": "/vigilant-umbrella/static/js/2.96e6fbf0.chunk.js.map",
+    "index.html": "/vigilant-umbrella/index.html",
+    "static/css/main.c617d053.chunk.css.map": "/vigilant-umbrella/static/css/main.c617d053.chunk.css.map",
+    "static/js/2.96e6fbf0.chunk.js.LICENSE.txt": "/vigilant-umbrella/static/js/2.96e6fbf0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f1cc87e3.js",
+    "static/js/2.96e6fbf0.chunk.js",
+    "static/css/main.c617d053.chunk.css",
+    "static/js/main.9020d449.chunk.js"
+  ]
+}
